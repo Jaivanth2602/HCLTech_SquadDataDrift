@@ -23,7 +23,7 @@ The system is organized into three decoupled, scalable layers:
 2. **AWS Serverless Lakehouse Layer:** S3 storage organized via the Medallion Architecture, metadata managed by AWS Glue Data Catalog, and queried serverless via Amazon Athena.
 3. **Analytics & Presentation Layer:** Microsoft Power BI consuming curated Gold datasets via DirectQuery or automated scheduled refresh.
 
-![High Level Design Architecture](high_level_design.svg)
+![High Level Design Architecture](images/high_level_design.svg)
 
 ---
 
@@ -38,7 +38,7 @@ The end-to-end data flow operates on an automated push trigger:
 6. **Athena Serving:** Athena queries the Gold tables directly using serverless Presto/Trino SQL.
 7. **Power BI Visualisation:** Power BI updates all dashboard visuals with zero manual intervention.
 
-![End-to-End Data Pipeline Architecture](pipeline_architecture.svg)
+![End-to-End Data Pipeline Architecture](images/pipeline_architecture.svg)
 
 ---
 
